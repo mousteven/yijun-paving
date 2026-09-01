@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>宜軍企業社｜景觀鋪面專業工班・連鎖磚・植草磚・路緣石</title>
+<meta name="description" content="宜軍企業社，台中大里，專業景觀鋪面工班。承作連鎖磚、植草磚、花崗石鋪面、路緣石安裝、石籠護坡，公共工程與集合住宅實績。">
+<style>
+:root{
+  --ink:#16191d; --ink-2:#3d444d; --ink-3:#6b737d;
+  --paper:#faf8f5; --paper-2:#f0ece5; --line:#ddd6cc;
+  --brick:#a8482f; --brick-d:#8a3823; --sand:#c9a227;
+  --max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",-apple-system,sans-serif;
+  color:var(--ink); background:var(--paper); line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+h1,h2,h3{line-height:1.3;letter-spacing:.01em}
+
+header{position:sticky;top:0;z-index:50;background:rgba(250,248,245,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{display:flex;align-items:baseline;gap:10px;font-weight:800;font-size:19px;letter-spacing:.06em}
+.brand small{font-weight:500;font-size:11px;letter-spacing:.18em;color:var(--ink-3)}
+.nav nav{display:flex;gap:26px}
+.nav a{color:var(--ink-2);text-decoration:none;font-size:14.5px;font-weight:600}
+.nav a:hover{color:var(--brick)}
+@media(max-width:780px){.nav nav{display:none}}
+
+.hero{position:relative;padding:86px 0 74px;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero:before{content:"";position:absolute;inset:0;opacity:.055;
+  background-image:linear-gradient(var(--ink) 1px,transparent 1px),linear-gradient(90deg,var(--ink) 1px,transparent 1px);
+  background-size:38px 19px;background-position:0 0,19px 0}
+.hero .wrap{position:relative}
+.eyebrow{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.22em;color:var(--brick);
+  border:1px solid var(--brick);border-radius:2px;padding:5px 12px;margin-bottom:26px}
+.hero h1{font-size:clamp(34px,5.6vw,58px);font-weight:900;letter-spacing:.02em}
+.hero h1 span{color:var(--brick)}
+.hero p.lead{margin-top:22px;font-size:clamp(16px,2vw,19px);color:var(--ink-2);max-width:640px}
+.stats{display:flex;flex-wrap:wrap;gap:44px;margin-top:44px}
+.stat b{display:block;font-size:34px;font-weight:900;letter-spacing:.02em}
+.stat span{font-size:13px;color:var(--ink-3);font-weight:600;letter-spacing:.08em}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:40px}
+.btn{display:inline-block;padding:13px 26px;border-radius:3px;text-decoration:none;font-weight:700;font-size:15px}
+.btn-p{background:var(--brick);color:#fff}
+.btn-p:hover{background:var(--brick-d)}
+.btn-s{border:1.5px solid var(--ink);color:var(--ink)}
+.btn-s:hover{background:var(--ink);color:var(--paper)}
+
+section{padding:84px 0}
+section.alt{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.shead{margin-bottom:44px}
+.shead .k{font-size:12px;font-weight:700;letter-spacing:.24em;color:var(--brick)}
+.shead h2{font-size:clamp(25px,3.4vw,33px);font-weight:800;margin-top:10px}
+.shead p{margin-top:12px;color:var(--ink-2);max-width:660px}
+
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:2px;background:var(--line);border:1px solid var(--line)}
+.svc>div{background:var(--paper);padding:30px 26px}
+section.alt .svc>div{background:var(--paper-2)}
+.svc h3{font-size:17.5px;font-weight:800;margin-bottom:9px}
+.svc h3:before{content:"";display:inline-block;width:9px;height:9px;background:var(--brick);margin-right:10px;vertical-align:middle}
+.svc p{font-size:14.5px;color:var(--ink-2)}
+
+.cases{display:flex;flex-direction:column;gap:18px}
+.case{border:1px solid var(--line);background:var(--paper)}
+.case-h{display:flex;gap:20px;align-items:center;padding:20px 24px;cursor:pointer;user-select:none}
+.case-h:hover{background:var(--paper-2)}
+.case-cover{width:112px;height:78px;flex:none;object-fit:cover;background:var(--paper-2)}
+.case-meta{flex:1;min-width:0}
+.case-meta h3{font-size:17.5px;font-weight:800}
+.case-tags{margin-top:7px;display:flex;flex-wrap:wrap;gap:7px}
+.tag{font-size:12px;font-weight:600;color:var(--ink-2);background:var(--paper-2);border:1px solid var(--line);padding:2px 9px;border-radius:2px}
+section.alt .tag{background:var(--paper)}
+.tag.c{color:var(--brick);border-color:var(--brick)}
+.case-n{flex:none;font-size:13px;font-weight:700;color:var(--ink-3);letter-spacing:.06em}
+.case-b{display:none;padding:0 24px 26px;border-top:1px solid var(--line)}
+.case.open .case-b{display:block}
+.case.open .case-n:after{content:" \25B2"}
+.case-n:after{content:" \25BC"}
+.case-scope{font-size:14.5px;color:var(--ink-2);padding:20px 0 16px}
+.case-scope b{color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(158px,1fr));gap:8px}
+.grid img{width:100%;aspect-ratio:4/3;object-fit:cover;cursor:zoom-in;background:var(--paper-2);display:block}
+.grid img:hover{outline:2.5px solid var(--brick);outline-offset:-2.5px}
+
+.clients{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:2px;background:var(--line);border:1px solid var(--line)}
+.clients div{background:var(--paper);padding:24px;text-align:center;font-weight:700;font-size:15.5px}
+section.alt .clients div{background:var(--paper-2)}
+
+.contact{display:grid;grid-template-columns:1.15fr 1fr;gap:56px}
+@media(max-width:820px){.contact{grid-template-columns:1fr;gap:34px}}
+.info dl{border-top:1px solid var(--line)}
+.info div{display:flex;gap:20px;padding:16px 0;border-bottom:1px solid var(--line)}
+.info dt{flex:none;width:82px;font-size:12.5px;font-weight:700;letter-spacing:.14em;color:var(--ink-3);padding-top:3px}
+.info dd{font-size:16px;font-weight:600}
+.todo{color:var(--brick);background:rgba(168,72,47,.09);border:1px dashed var(--brick);padding:1px 9px;font-size:14px;border-radius:2px}
+.note{background:var(--paper-2);border-left:3px solid var(--sand);padding:20px 22px;font-size:14.5px;color:var(--ink-2)}
+section.alt .note{background:var(--paper)}
+.note b{color:var(--ink)}
+
+footer{background:var(--ink);color:#9aa2ad;padding:46px 0;font-size:13.5px}
+footer b{color:#fff;font-size:16px;letter-spacing:.06em}
+footer p{margin-top:10px}
+
+.lb{position:fixed;inset:0;z-index:100;background:rgba(12,14,17,.96);display:none;align-items:center;justify-content:center}
+.lb.on{display:flex}
+.lb img{max-width:94vw;max-height:88vh;object-fit:contain}
+.lb button{position:absolute;background:none;border:none;color:#fff;cursor:pointer;font-size:34px;line-height:1;padding:14px;opacity:.75}
+.lb button:hover{opacity:1}
+.lb .x{top:10px;right:16px;font-size:30px}
+.lb .p{left:8px;top:50%;transform:translateY(-50%)}
+.lb .n{right:8px;top:50%;transform:translateY(-50%)}
+.lb .cap{position:absolute;bottom:18px;left:0;right:0;text-align:center;color:#c8cdd4;font-size:13.5px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">宜軍企業社 <small>YI JUN PAVING</small></div>
+    <nav>
+      <a href="#svc">服務項目</a>
+      <a href="#cases">施工實績</a>
+      <a href="#cap">施工能力</a>
+      <a href="#clients">合作營造廠</a>
+      <a href="#contact">聯絡我們</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <span class="eyebrow">台中大里・景觀鋪面專業工班</span>
+    <h1>鋪面這一項，<br>交給<span>只做鋪面</span>的人。</h1>
+    <p class="lead">宜軍企業社專營景觀鋪面工程，承接營造廠分包之連鎖磚、植草磚、花崗石鋪面、路緣石安裝與石籠護坡。從放樣、配磚、切割到收邊，一個工班做到完，不轉包。</p>
+    <div class="stats">
+      <div class="stat"><b>10+</b><span>公開實績案場</span></div>
+      <div class="stat"><b>129</b><span>張工地實景紀錄</span></div>
+      <div class="stat"><b>中彰投雲嘉南</b><span>主要施工區域</span></div>
+    </div>
+    <div class="cta">
+      <a class="btn btn-p" href="#cases">看施工實績</a>
+      <a class="btn btn-s" href="#contact">洽詢報價</a>
+    </div>
+  </div>
+</div>
+
+<section id="svc">
+  <div class="wrap">
+    <div class="shead">
+      <div class="k">SERVICES</div>
+      <h2>服務項目</h2>
+      <p>以景觀鋪面為主軸，涵蓋硬景鋪設與周邊收邊、擋土設施，可依施工圖與監造要求配合分區分期施作。</p>
+    </div>
+    <div class="svc">
+      <div><h3>連鎖磚鋪設</h3><p>人字砌、十字對縫、菱格紋、扇形放射等各式砌法，含造型拼花分色排列與現場放樣分割。</p></div>
+      <div><h3>植草磚鋪設</h3><p>停車場、廣場、綠地透水鋪面，含級配整平與大面積施作。</p></div>
+      <div><h3>花崗石／崗石磚鋪面</h3><p>巷道、步道、迴廊石材鋪設，含建材吊運與現場配置。</p></div>
+      <div><h3>路緣石安裝</h3><p>緣石放樣、安裝與收頭，配合道路及人行道工程。</p></div>
+      <div><h3>石籠護坡・毛石砌</h3><p>石籠（蛇籠）圍牆與護岸、毛石砌擋土牆，護岸結構與景觀鋪面整合施作。</p></div>
+      <div><h3>切割收邊與人手孔收頭</h3><p>管線人手孔、檢查井、樹穴、花台周邊之切割配磚與收邊處理。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="cases">
+  <div class="wrap">
+    <div class="shead">
+      <div class="k">PROJECTS</div>
+      <h2>施工實績</h2>
+      <p>以下為本公司實際承作之案場，照片為施工期間與完工現場紀錄。點擊案名可展開全部照片。</p>
+    </div>
+    <div class="cases" id="caseList"></div>
+  </div>
+</section>
+
+<section id="cap">
+  <div class="wrap">
+    <div class="shead">
+      <div class="k">CAPABILITY</div>
+      <h2>施工能力</h2>
+    </div>
+    <div class="svc">
+      <div><h3>看得懂圖，照圖放樣</h3><p>依景觀CAD施工圖與鋪面配置圖放樣，圓形由內而外、階梯由下而上，砌法與分割線依圖施作，不憑感覺。</p></div>
+      <div><h3>公共工程配合經驗</h3><p>長期承接公所、縣市府發包案之分包工程，配合承造廠與監造單位之工序、查驗與進度要求。</p></div>
+      <div><h3>切割收邊是基本功</h3><p>彎曲路型、人手孔密集巷道、造型拼花，全靠現場切割配磚，這是鋪面工程最看得出功夫的地方。</p></div>
+      <div><h3>自有工班，不轉包</h3><p>承接後由本公司工班直接施作，工序與品質由同一組人負責到完工。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="clients">
+  <div class="wrap">
+    <div class="shead">
+      <div class="k">PARTNERS</div>
+      <h2>合作營造廠</h2>
+      <p>本公司為專業分包工班，長期與下列營造廠合作承接鋪面工程。</p>
+    </div>
+    <div class="clients">
+      <div>見安營造股份有限公司</div>
+      <div>弘豐營造股份有限公司</div>
+      <div>中鴻營造有限公司</div>
+      <div>德昌營造</div>
+      <div>達宏營造工程有限公司</div>
+      <div>璟麟營造股份有限公司</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="shead">
+      <div class="k">CONTACT</div>
+      <h2>聯絡我們</h2>
+      <p>需要鋪面工班配合的案子，歡迎提供施工圖說與工期，我們會回覆可承作範圍。</p>
+    </div>
+    <div class="contact">
+      <div class="info">
+        <dl>
+          <div><dt>公司名稱</dt><dd>宜軍企業社</dd></div>
+          <div><dt>聯絡人</dt><dd>莊已毅</dd></div>
+          <div><dt>電話</dt><dd><span class="todo">待填入</span></dd></div>
+          <div><dt>LINE</dt><dd><span class="todo">待填入</span></dd></div>
+          <div><dt>地址</dt><dd>台中市大里區東湖里長春路134號</dd></div>
+          <div><dt>統一編號</dt><dd><span class="todo">待填入</span></dd></div>
+          <div><dt>營業項目</dt><dd>景觀鋪面工程施作（商業登記）</dd></div>
+        </dl>
+      </div>
+      <div class="note">
+        <p><b>這個頁面還沒公開。</b></p>
+        <p style="margin-top:12px">目前是私人版本，只有拿到檔案的人看得到，Google 也搜尋不到（已加 noindex）。</p>
+        <p style="margin-top:12px">上線前需要莊伯父確認三件事：</p>
+        <p style="margin-top:8px">1. 電話、LINE、統一編號要不要放，放哪一組<br>
+        2. 實績案場與合作營造廠的名稱可不可以公開<br>
+        3. 照片裡有沒有不適合對外的畫面</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <b>宜軍企業社</b>
+    <p>景觀鋪面工程・連鎖磚｜植草磚｜花崗石鋪面｜路緣石｜石籠護坡</p>
+    <p>台中市大里區東湖里長春路134號</p>
+  </div>
+</footer>
+
+<div class="lb" id="lb">
+  <button class="x" onclick="closeLb()">&#10005;</button>
+  <button class="p" onclick="step(-1)">&#8249;</button>
+  <img id="lbImg" alt="">
+  <button class="n" onclick="step(1)">&#8250;</button>
+  <div class="cap" id="lbCap"></div>
+</div>
+
+<script src="cases.js"></script>
+<script>
+const list = document.getElementById('caseList');
+CASES.forEach((c, ci) => {
+  const el = document.createElement('div');
+  el.className = 'case';
+  const bits = [c.loc];
+  if (c.year !== '—') bits.push(c.year);
+  if (c.client) bits.push('承造：' + c.client);
+  const tags = bits.map((t, i) => '<span class="tag' + (t.indexOf('承造') === 0 ? ' c' : '') + '">' + t + '</span>').join('');
+  el.innerHTML =
+    '<div class="case-h">' +
+      '<img class="case-cover" loading="lazy" src="photos/' + c.slug + '/t/' + c.photos[0] + '" alt="">' +
+      '<div class="case-meta"><h3>' + c.title + '</h3><div class="case-tags">' + tags + '</div></div>' +
+      '<div class="case-n">' + c.photos.length + ' 張</div>' +
+    '</div>' +
+    '<div class="case-b">' +
+      '<div class="case-scope"><b>承作項目：</b>' + c.scope.join('、') + (c.note ? '<br>' + c.note : '') + '</div>' +
+      '<div class="grid">' + c.photos.map((p, i) =>
+        '<img loading="lazy" src="photos/' + c.slug + '/t/' + p + '" data-c="' + ci + '" data-i="' + i + '" alt="' + c.title + ' 施工紀錄 ' + (i + 1) + '">').join('') +
+      '</div>' +
+    '</div>';
+  el.querySelector('.case-h').onclick = () => el.classList.toggle('open');
+  list.appendChild(el);
+});
+
+let cur = { c: 0, i: 0 };
+const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap');
+list.addEventListener('click', e => {
+  if (e.target.tagName !== 'IMG' || !e.target.dataset.c) return;
+  cur = { c: +e.target.dataset.c, i: +e.target.dataset.i };
+  render(); lb.classList.add('on'); document.body.style.overflow = 'hidden';
+});
+function render() {
+  const c = CASES[cur.c];
+  lbImg.src = 'photos/' + c.slug + '/' + c.photos[cur.i];
+  lbCap.textContent = c.title + '　' + (cur.i + 1) + ' / ' + c.photos.length;
+}
+function step(d) {
+  const n = CASES[cur.c].photos.length;
+  cur.i = (cur.i + d + n) % n; render();
+}
+function closeLb() { lb.classList.remove('on'); document.body.style.overflow = ''; }
+lb.onclick = e => { if (e.target === lb) closeLb(); };
+document.onkeydown = e => {
+  if (!lb.classList.contains('on')) return;
+  if (e.key === 'Escape') closeLb();
+  if (e.key === 'ArrowLeft') step(-1);
+  if (e.key === 'ArrowRight') step(1);
+};
+</script>
+</body>
+</html>
