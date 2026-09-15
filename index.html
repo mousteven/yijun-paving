@@ -1379,7 +1379,12 @@
 
   /* 首頁標題分層浮現 */
   var hero = document.querySelector('.hero-inner');
-  if (hero) requestAnimationFrame(function(){ hero.classList.add('shown'); });
+  if (hero) {
+    var show = function(){ hero.classList.add('shown'); };
+    requestAnimationFrame(show);
+    /* 保底：分頁沒有焦點時 rAF 可能完全不觸發，標題會永遠隱形 */
+    setTimeout(show, 120);
+  }
 
   /* 精選案場卡片傾斜（電腦滑鼠移過、手機按住拖曳） */
   var MAX = 10;
