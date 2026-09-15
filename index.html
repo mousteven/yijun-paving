@@ -404,6 +404,9 @@
   .anim .hero-inner > *:nth-child(3){ transition-delay:140ms; }
   .anim .hero-inner > *:nth-child(4){ transition-delay:210ms; }
   .anim .hero-inner.shown > *{ opacity:1; transform:translateY(0); filter:blur(0); }
+  /* 保險網：動畫沒跑成功時直接顯示，標題永遠不會是隱形的 */
+  .anim .hero-inner.noanim > *{ opacity:1 !important; transform:none !important;
+    filter:none !important; transition:none !important; }
 
   /* 3. 精選案場卡片朝指標傾斜，光澤跟著走（最多 10 度） */
   .featured-card{
@@ -1382,8 +1385,15 @@
   if (hero) {
     var show = function(){ hero.classList.add('shown'); };
     requestAnimationFrame(show);
-    /* 保底：分頁沒有焦點時 rAF 可能完全不觸發，標題會永遠隱形 */
+    /* 保底一：分頁沒有焦點時 rAF 可能完全不觸發 */
     setTimeout(show, 120);
+    /* 保底二：連 CSS 轉場都沒推進的話（分頁未合成），放棄動畫直接顯示文字 */
+    var net = function(){
+      if (document.hidden) return;
+      if (getComputedStyle(hero.children[0]).opacity === '0') hero.classList.add('noanim');
+    };
+    setTimeout(net, 2000);
+    document.addEventListener('visibilitychange', function(){ setTimeout(net, 2000); });
   }
 
   /* 精選案場卡片傾斜（電腦滑鼠移過、手機按住拖曳） */
